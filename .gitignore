@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 # Created by https://www.gitignore.io
 
 ### Python ###
+=======
+>>>>>>> 5fe9edbf1c4b6e05da349361470c4ad56f737b81
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -58,6 +61,7 @@ docs/_build/
 
 # PyBuilder
 target/
+<<<<<<< HEAD
 
 
 ### Django ###
@@ -68,3 +72,5 @@ __pycache__/
 local_settings.py
 
 
+=======
+>>>>>>> 5fe9edbf1c4b6e05da349361470c4ad56f737b81
