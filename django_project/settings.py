@@ -106,6 +106,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 #setting for REST Framework
+STATIC_ROOT = '/home/django/django_project/django_project/static'
 STATIC_URL = '/static/'
 
 REST_FRAMEWORK = {
