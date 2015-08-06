@@ -1,8 +1,8 @@
-#from django.shortcuts import render
+from django.shortcuts import render
 
 from rest_framework import viewsets
-from .serializers import PlayerSerializer, TeamSerializer
-from .models import Player, Team
+from .serializers import PlayerSerializer, TeamSerializer, CoachSerializer
+from .models import Player, Team, Coach
 
 
 class PlayerViewSet(viewsets.ModelViewSet):
@@ -19,4 +19,11 @@ class TeamViewSet(viewsets.ModelViewSet):
     """
     queryset = Team.objects.all()
     serializer_class = TeamSerializer
+
+class CoachViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows teams to be viewed or edited.
+    """
+    queryset = Coach.objects.all()
+    serializer_class = CoachSerializer
 
