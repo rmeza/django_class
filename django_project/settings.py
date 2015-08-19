@@ -40,10 +40,13 @@ INSTALLED_APPS = (
     'rest_framework',
     'soccer',
     'football',
-    'tournament'
+    'tournament',
+    'corsheaders'
 )
 
 MIDDLEWARE_CLASSES = (
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -115,6 +118,8 @@ REST_FRAMEWORK = {
    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
    'PAGE_SIZE': 10
 }
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 try:
     from local_settings import *
