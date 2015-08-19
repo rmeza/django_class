@@ -45,4 +45,5 @@ pip-delete-this-directory.txt
 *.pot
 *.pyc
 __pycache__/
+#exclude this line in github repo. only for dev environment we nned this file
 local_settings.py
