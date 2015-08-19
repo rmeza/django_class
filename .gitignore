@@ -45,5 +45,5 @@ pip-delete-this-directory.txt
 *.pot
 *.pyc
 __pycache__/
-local_settings.py
+# uncomment this linelocal_settings.py
 
